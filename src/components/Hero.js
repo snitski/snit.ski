@@ -2,7 +2,7 @@ import headshot from '../assets/headshot.png';
 
 export default function Hero() {
     return (
-        <div className="h-screen grid grid-cols-2 grid-rows-2 px-32 select-none">
+        <div className="h-screen grid md:grid-cols-2 grid-rows-2 lg:px-32 select-none">
             <div className="flex items-end justify-center h-full row-start-2 row-end-3 col-start-1 col-end-2">
                 <button className="btn btn-lg btn-ghost btn-circle flex flex-col items-center justify-center gap-0 animate-bounce">
                     <p className="font-normal lowercase pt-2">scroll</p>
@@ -29,7 +29,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-row items-center justify-center overflow-clip row-span-2">
+            <div className="hidden md:flex flex-row items-center justify-center overflow-clip row-span-2">
                 <img className="aspect-auto opacity-80" src={headshot} alt="Me!" />
             </div>
         </div>
