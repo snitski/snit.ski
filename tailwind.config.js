@@ -29,7 +29,11 @@ module.exports = {
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
     },
-    extend: { },
+    extend: {
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 }
