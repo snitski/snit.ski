@@ -2,14 +2,14 @@ import headshot from '../assets/headshot.png';
 
 export default function Hero() {
     return (
-        <div className="h-screen grid md:grid-cols-2 grid-rows-2 lg:px-32 select-none">
+        <div className="h-screen w-full grid md:grid-cols-2 grid-rows-2 lg:px-32 select-none">
             <div className="flex items-end justify-center h-full row-start-2 row-end-3 col-start-1 col-end-2">
-                <button className="btn btn-lg btn-ghost btn-circle flex flex-col items-center justify-center gap-0 animate-bounce">
+                <a href="#AboutMe" className="btn btn-lg btn-ghost btn-circle flex flex-col items-center justify-center gap-0 animate-bounce">
                     <p className="font-normal lowercase pt-2">scroll</p>
                     <svg className="w-5 h-5 stroke-current fill-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                     </svg>
-                </button>
+                </a>
             </div>
             <div className="flex flex-col justify-center h-full row-start-1 row-end-3 col-start-1 col-end-2">
                 <h1 className="text-9xl font-bold">
@@ -29,8 +29,8 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="hidden md:flex flex-row items-center justify-center overflow-clip row-span-2">
-                <img className="aspect-auto opacity-80" src={headshot} alt="Me!" />
+            <div className="hidden md:flex flex-row items-center justify-center row-span-2 h-full overflow-hidden">
+                <img className="aspect-[3/4] opacity-80" src={headshot} alt="Headshot" />
             </div>
         </div>
     )
